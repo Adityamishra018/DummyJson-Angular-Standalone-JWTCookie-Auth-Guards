@@ -1,0 +1,12 @@
+<form #loginForm="ngForm" (submit)="login()">
+    <label for="username">Username</label>
+    <input id="username" type="text" name="username" ngModel>
+    <label for="password">Password</label>
+    <input id="password" type="text" name="password" ngModel>
+    <button [disabled]="auth.isProcessing">Login</button>
+</form>
+
+<span>Example</span>
+<pre class="example">
+    {{example}}
+</pre>

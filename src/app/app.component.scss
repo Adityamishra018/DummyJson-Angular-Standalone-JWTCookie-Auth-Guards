@@ -1,0 +1,43 @@
+header{
+    margin-top: 1rem;
+    width: 80%;
+    margin-inline: auto;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-between;
+
+    .title{
+        margin: 1rem;
+    }
+
+    li {
+        display: inline-block;
+        margin: 1rem;
+
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+
+            i{
+                font-size: 18px;
+                vertical-align: bottom;
+            }
+
+            &.active::after{
+                content: "";
+                display: block;
+                margin-top: 0.1rem;
+                height: 0.1rem;
+                background-color: blue;
+                transform: scaleX(1.1);
+            }
+        }
+    }
+}
+
+main{
+    width: 80%;
+    margin-block : 3rem;
+    margin-inline: auto;
+}
