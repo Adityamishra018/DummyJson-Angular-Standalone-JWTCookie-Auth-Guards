@@ -5,7 +5,7 @@
   <nav>
     <ul>
       <li *ngIf="!auth.isAuthenticated()"><a routerLink="/login" routerLinkActive="active">Login</a></li>
-      <li><a routerLink="/users" routerLinkActive="active">Users</a></li>
+      <li><a routerLink="/users" routerLinkActive="active">Users (2s to resolve)</a></li>
       <li><a routerLink="/posts" routerLinkActive="active">Posts</a></li>
       <li><a routerLink="/me" routerLinkActive="active">Me <i class="fa fa-lock"></i></a></li>
       <li *ngIf="auth.isAuthenticated()"><a routerLink="/logout" routerLinkActive="active">Logout</a></li>

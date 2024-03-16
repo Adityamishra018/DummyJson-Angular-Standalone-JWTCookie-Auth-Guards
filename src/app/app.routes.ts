@@ -12,5 +12,5 @@ export const routes: Routes = [
     {path : 'posts', component : PostComponent},
     {path : 'me', component : MeComponent, canActivate : [activateGuard]},
     {path : 'logout', component : LogoutComponent},
-    {path : '', pathMatch : 'full', redirectTo : 'users'}
+    {path : '', pathMatch : 'full', redirectTo : 'posts'}
 ];
